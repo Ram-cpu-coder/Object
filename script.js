@@ -53,3 +53,23 @@
 
 // console.log(person2.getFullAddress());
 // console.log(person2.getCurrentAge());
+
+
+
+// ===========================================Destructing the object=============================================
+
+
+const car = {
+    name: "ford Mustang",
+    year: 1980,
+    model: "Hedgeback",
+};
+
+//traditional way 
+// const name = car.name;
+// const model = car.model;
+// const year = car.year;
+
+
+const {model, name, year} = car;
+console.log(model, name, year);
