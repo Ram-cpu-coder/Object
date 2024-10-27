@@ -59,17 +59,62 @@
 // ===========================================Destructing the object=============================================
 
 
+// const car = {
+//     name: "ford Mustang",
+//     year: 1980,
+//     model: "Hedgeback",
+// };
+
+// //traditional way 
+// // const name = car.name;
+// // const model = car.model;
+// // const year = car.year;
+
+// //convenient way to assign the value of the properties in new variable
+// const {model, name, year} = car;
+// console.log(model, name, year);
+
+
+
+
+//===============================================DEFAULT========================================================
+// const addSum = (a, b =10, name = " DEFAULT NAME")=>{
+//     return (a + b) + name; 
+// }
+// console.log(addSum(1));
+
+
+// =======================================REST operator==============================================
+// const person = ["ram", " Shyam"];
+
+// const anotherPerson = person;
+// person.push("HAri");
+// console.log(person);
+// console.log(anotherPerson);
+
+// in above shallow copy is being done.
+// that means whatever is changed in the first variable is changed in the another one
+//shallow copy is to copy the adress of the variable
+
+
+//now deep copy
+// it is done using the REST operator
+
+
+
 const car = {
     name: "ford Mustang",
     year: 1980,
     model: "Hedgeback",
 };
 
-//traditional way 
-// const name = car.name;
-// const model = car.model;
-// const year = car.year;
+
+const car2 = { ...car}; ///using the REST operator
+ 
+car.name = " BMW"; // changing the value of the variable 
+
+console.log(car);
+
+console.log(car2);
 
 
-const {model, name, year} = car;
-console.log(model, name, year);
