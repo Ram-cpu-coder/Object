@@ -285,7 +285,7 @@
 // to run something after some time
 // setTimeout(() => {
 //     console.log("hello");
-    
+
 // }, 3000);
 
 
@@ -310,34 +310,58 @@
 
 // Print Numbers from 1 to n
 const n = 10;
-const numbers = (n) => {
-    let num = 0;
-    for(let i = 1; i < n; i++){
-        num += 1;
-        console.log(num);
-    }
-};
-numbers(n);
+// const numbers = (n) => {
+//     let num = 0;
+//     for(let i = 1; i < n; i++){
+//         num += 1;
+//         console.log(num);
+//     }
+// };
+// numbers(n);
 
 // ==========================================
 // print all the even numbers
-const evenNmbers = (n) =>{
-    for(let i = 1; i < n; i++){
-        i % 2 === 0 ? console.log(i) : false;
-    }
-}
-console.log("==============Even Numbers============");
+// const evenNmbers = (n) => {
+//     for (let i = 1; i < n; i++) {
+//         i % 2 === 0 ? console.log(i) : false;
+//     }
+// }
+// console.log("==============Even Numbers============");
 
-evenNmbers(n);
+// evenNmbers(n);
 
-// ============================
+// ==========================================
+
 // 2. Sum of Even Numbers 1 to n
+//created an array of the even numbers from 1 to n.
+let numbers = [];
+const NumbersToSum = (n) => {
+    for (i = 1; i < n; i++) {
+        if (i % 2 === 0) {
+            numbers.push(i);
+        }
+    }
+    console.log(numbers);
+}
+NumbersToSum(n); 
+
+//added all the elements i.e even numbers in the array created above 
+const add = (numbers) => {
+    let add = 0;
+    for (i = 0; i < numbers.length; i++) {
+        add += numbers[i];
+    }
+    console.log(add);
+}
+
+add(numbers);
+// ==========================================
 // 3. Create a Multiplication Table of n
 // 	n = 10;
 // 	10 x 1 = 10
 // 	10 x 2 = 20
 // 	………
-// 4. Reverse an Array 
+// 4. Reverse an Array
 // 5. Count Down from n
 // 6. Generate Fibonacci Sequence
 // 	0, 1, 1, 2, 3, 5, 8, 13, 21…… n
