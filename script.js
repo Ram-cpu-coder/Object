@@ -413,23 +413,46 @@ const n = 10;
 
 // const n = 10;
 
-let a = 0, b = 1, sum;
-const Fibonacci = (n) => {
+// let a = 0, b = 1, sum;
+// const Fibonacci = (n) => {
 
-    n === 0 ? 0 : false;
-    n === 1 ? 1 : false;
+//     n === 0 ? 0 : false;
+//     n === 1 ? 1 : false;
 
-    for (let i = 2; i <= n; i++) {
-        sum = a + b;
-        a = b;
-        b = sum;
-        console.log(sum);
-    }
+//     for (let i = 2; i <= n; i++) {
+//         sum = a + b;
+//         a = b;
+//         b = sum;
+//         console.log(sum);
+//     }
 
-}
-Fibonacci(n);
+// }
+// Fibonacci(n);
 
 // ==========================================
 // 7. Sum of Digits in a Number(using % ) without using string manipulation
 // 	var number = 9090 ;
 // 9+0+9+0 = 18
+
+const number = 9090;
+const arr = [];
+let temporary = number;
+
+const sum = (temporary)=>{
+    while(temporary > 0){
+    arr.unshift(temporary % 10);
+    temporary = Math.floor(temporary / 10);
+    } 
+    console.log(arr);
+    let add = 0;
+    for( let i = 0; i < arr.length; i++){
+        add += arr[i];
+    }
+    console.log(add);
+    
+}
+sum(temporary);
+
+
+
+// ==========================================
