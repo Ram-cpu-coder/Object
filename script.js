@@ -265,16 +265,58 @@
 // Output : Prime
 
 
-const input = 11;
+// const input = 11;
 
-const PrimeCheck = (input)=>{
-    for(let i = 2; i < input; i++){
-        if(input % i === 0){
-            return false;
-        }
-        return true;
+// const PrimeCheck = (input)=>{
+//     for(let i = 2; i < input; i++){
+//         if(input % i === 0){
+//             return false;
+//         }
+//         return true;
+//     }
+
+// }
+
+// console.log(PrimeCheck(input));
+
+// =====================================================================================
+
+//setTimeOut function 
+// to run something after some time
+setTimeout(() => {
+    console.log("hello");
+    
+}, 3000);
+
+
+//setInterval function
+// to run something repeatedly in every certain time 
+
+let i = 0;
+const id = setInterval(() => {
+    console.log("Hi " + i);
+    i = i + 1;
+    if(i===3){
+        clearInterval(id);
     }
+}, 1000);
 
-}
+// ============================================
 
-console.log(PrimeCheck(input));
+// 1. Print Numbers from 1 to n
+// print all the even numbers
+// print all the odd numbers
+// print all the primes
+// 2. Sum of Even Numbers 1 to n
+// 3. Create a Multiplication Table of n
+// 	n = 10;
+// 	10 x 1 = 10
+// 	10 x 2 = 20
+// 	………
+// 4. Reverse an Array 
+// 5. Count Down from n
+// 6. Generate Fibonacci Sequence
+// 	0, 1, 1, 2, 3, 5, 8, 13, 21…… n
+// 7. Sum of Digits in a Number(using % ) without using string manipulation
+// 	var number = 9090 ;
+// 9+0+9+0 = 18
