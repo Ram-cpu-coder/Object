@@ -334,32 +334,45 @@ const n = 10;
 
 // 2. Sum of Even Numbers 1 to n
 //created an array of the even numbers from 1 to n.
-let numbers = [];
-const NumbersToSum = (n) => {
-    for (i = 1; i < n; i++) {
-        if (i % 2 === 0) {
-            numbers.push(i);
-        }
-    }
-    console.log(numbers);
-}
-NumbersToSum(n); 
+// let numbers = [];
+// const NumbersToSum = (n) => {
+//     for (i = 1; i < n; i++) {
+//         if (i % 2 === 0) {
+//             numbers.push(i);
+//         }
+//     }
+//     console.log(numbers);
+// }
+// NumbersToSum(n); 
 
 //added all the elements i.e even numbers in the array created above 
-const add = (numbers) => {
-    let add = 0;
-    for (i = 0; i < numbers.length; i++) {
-        add += numbers[i];
-    }
-    console.log(add);
-}
+// const add = (numbers) => {
+//     let add = 0;
+//     for (i = 0; i < numbers.length; i++) {
+//         add += numbers[i];
+//     }
+//     console.log(add);
+// }
 
-add(numbers);
+// add(numbers);
+
 // ==========================================
 // 3. Create a Multiplication Table of n
 // 	n = 10;
 // 	10 x 1 = 10
 // 	10 x 2 = 20
+
+
+const multiplicationTable = (n)=>{
+    for(i = 1; i < n; i++){
+        const result = n * i;
+       console.log(n + " X " + i + " = "+ result); 
+    }
+}
+console.log(multiplicationTable(n));
+
+
+// ==========================================
 // 	………
 // 4. Reverse an Array
 // 5. Count Down from n
