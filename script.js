@@ -375,28 +375,39 @@ const n = 10;
 // ==========================================
 // 	………
 // 4. Reverse an Array
-const Array = [];
-const reversedArray = [];
-const pushAndReverse = (Array) => {
-    for (let i = 1; i < n; i++) {
-        if (i % 2 === 1) {
-            Array.push(i);
-        }
-    }
-    console.log(Array);
-}
-pushAndReverse(Array);
+// const Array = [];
+// const reversedArray = [];
+// const pushAndReverse = (Array) => {
+//     for (let i = 1; i < n; i++) {
+//         if (i % 2 === 1) {
+//             Array.push(i);
+//         }
+//     }
+//     console.log(Array);
+// }
+// pushAndReverse(Array);
 
-const reverse = (reversedArray) => {
-    for (let i = Array.length - 1; i >= 0; i--) {
-        reversedArray.push(Array[i]);
-    }
-    console.log(reversedArray);
-}
-reverse(reversedArray);
+// const reverse = (reversedArray) => {
+//     for (let i = Array.length - 1; i >= 0; i--) {
+//         reversedArray.push(Array[i]);
+//     }
+//     console.log(reversedArray);
+// }
+// reverse(reversedArray);
 
 // ==========================================
 // 5. Count Down from n
+
+const countDown = (n)=>{
+    for(let i = n; i >= 0; i--){
+        console.log(i);
+    }
+}
+countDown(n);
+
+
+
+// ==========================================
 // 6. Generate Fibonacci Sequence
 // 	0, 1, 1, 2, 3, 5, 8, 13, 21…… n
 // 7. Sum of Digits in a Number(using % ) without using string manipulation
