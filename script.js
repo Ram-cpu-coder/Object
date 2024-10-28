@@ -102,19 +102,43 @@
 
 
 
-const car = {
-    name: "ford Mustang",
-    year: 1980,
-    model: "Hedgeback",
-};
+// const car = {
+//     name: "ford Mustang",
+//     year: 1980,
+//     model: "Hedgeback",
+// };
 
 
-const car2 = { ...car}; ///using the REST operator
+// const car2 = { ...car}; ///using the REST operator
  
-car.name = " BMW"; // changing the value of the variable 
+// car.name = " BMW"; // changing the value of the variable 
 
-console.log(car);
+// console.log(car);
 
-console.log(car2);
+// console.log(car2);
 
 
+
+// ===============================challenge===============
+// Get Sum of Array Elements
+// Example input : [1, 2, 3, 4, 5]
+// output : 15
+
+// const input = [1, 2, 3, 4, 5];
+// const sum = input.reduce((acc, item) =>{
+//     return acc + item;
+// },0)
+
+// console.log(sum);
+
+
+// Get multiplication of Array Elements
+// Example input : [1, 2, 3, 4, 5]
+// output : 120
+
+
+const input = [1, 2, 3, 4, 5];
+const result = input.reduce((acc, item) => {
+    return acc * item;
+},1);
+console.log(result);
