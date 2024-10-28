@@ -151,20 +151,57 @@
 // input : racecar
 // output : true
 
-const input = "racecar";
-function isPalindrome(input){
+// const input = "racecar";
+// function isPalindrome(input){
 
-    let reversedInput = "";
-    for( let i = input.length-1; i >= 0; i-- ){
+//     let reversedInput = "";
+//     for( let i = input.length-1; i >= 0; i-- ){
     
-     reversedInput += input[i];
-     console.log(reversedInput);
+//      reversedInput += input[i];
+//      console.log(reversedInput);
      
-}
-return input === reversedInput
-}
+// }
+// return input === reversedInput
+// }
 
-console.log(isPalindrome(input));
+// console.log(isPalindrome(input));
 
 
 
+// // ==================================Print all factors========
+// const input = 10;
+// function factor(input){
+//     for(let i = 1; i <= input; i++){
+        
+//         if(input % i === 0){
+//             console.log(i);
+            
+//         }
+    
+//     }
+
+// }
+
+// console.log(factor(input));
+
+
+// ==============================
+
+
+
+// let inputString = "Hello World";
+// let vowelArray = "aeiou";
+
+// let counter = 0;
+
+// for(let i = 0; i< inputString.length; i++){
+
+//     if(vowelArray.split("").includes(inputString[i].toLowerCase()))
+//         {
+//             counter += 1;
+//         }
+     
+    
+// }
+
+// console.log(counter);
