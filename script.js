@@ -137,8 +137,34 @@
 // output : 120
 
 
-const input = [1, 2, 3, 4, 5];
-const result = input.reduce((acc, item) => {
-    return acc * item;
-},1);
-console.log(result);
+// const input = [1, 2, 3, 4, 5];
+// const result = input.reduce((acc, item) => {
+//     return acc * item;
+// },1);
+// console.log(result);
+
+
+// =========================isPalindrome==============
+
+// Palindrome Checker
+// check if a given string is a palindrome
+// input : racecar
+// output : true
+
+const input = "racecar";
+function isPalindrome(input){
+
+    let reversedInput = "";
+    for( let i = input.length-1; i >= 0; i-- ){
+    
+     reversedInput += input[i];
+     console.log(reversedInput);
+     
+}
+return input === reversedInput
+}
+
+console.log(isPalindrome(input));
+
+
+
