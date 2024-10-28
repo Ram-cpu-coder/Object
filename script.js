@@ -363,18 +363,39 @@ const n = 10;
 // 	10 x 2 = 20
 
 
-const multiplicationTable = (n)=>{
-    for(i = 1; i < n; i++){
-        const result = n * i;
-       console.log(n + " X " + i + " = "+ result); 
-    }
-}
-console.log(multiplicationTable(n));
+// const multiplicationTable = (n)=>{
+//     for(i = 1; i < n; i++){
+//         const result = n * i;
+//        console.log(n + " X " + i + " = "+ result); 
+//     }
+// }
+// multiplicationTable(n);
 
 
 // ==========================================
 // 	………
 // 4. Reverse an Array
+const Array = [];
+const reversedArray = [];
+const pushAndReverse = (Array) => {
+    for (let i = 1; i < n; i++) {
+        if (i % 2 === 1) {
+            Array.push(i);
+        }
+    }
+    console.log(Array);
+}
+pushAndReverse(Array);
+
+const reverse = (reversedArray) => {
+    for (let i = Array.length - 1; i >= 0; i--) {
+        reversedArray.push(Array[i]);
+    }
+    console.log(reversedArray);
+}
+reverse(reversedArray);
+
+// ==========================================
 // 5. Count Down from n
 // 6. Generate Fibonacci Sequence
 // 	0, 1, 1, 2, 3, 5, 8, 13, 21…… n
