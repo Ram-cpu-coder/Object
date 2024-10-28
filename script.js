@@ -283,23 +283,23 @@
 
 //setTimeOut function 
 // to run something after some time
-setTimeout(() => {
-    console.log("hello");
+// setTimeout(() => {
+//     console.log("hello");
     
-}, 3000);
+// }, 3000);
 
 
 //setInterval function
 // to run something repeatedly in every certain time 
 
-let i = 0;
-const id = setInterval(() => {
-    console.log("Hi " + i);
-    i = i + 1;
-    if(i===3){
-        clearInterval(id);
-    }
-}, 1000);
+// let i = 0;
+// const id = setInterval(() => {
+//     console.log("Hi " + i);
+//     i = i + 1;
+//     if(i===3){
+//         clearInterval(id);
+//     }
+// }, 1000);
 
 // ============================================
 
@@ -307,6 +307,17 @@ const id = setInterval(() => {
 // print all the even numbers
 // print all the odd numbers
 // print all the primes
+const n = 10;
+const numbers = (n) => {
+    let num = 0;
+    for(let i = 1; i < n; i++){
+        num += 1;
+        console.log(num);
+    }
+};
+numbers(n);
+
+// ============================
 // 2. Sum of Even Numbers 1 to n
 // 3. Create a Multiplication Table of n
 // 	n = 10;
