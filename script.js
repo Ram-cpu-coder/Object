@@ -185,6 +185,8 @@
 // console.log(factor(input));
 
 
+
+
 // ==============================
 
 
@@ -205,3 +207,24 @@
 // }
 
 // console.log(counter);
+
+
+// =========================factorial===================
+
+
+// const num = 5;
+// let factorial = 1;
+// for(let i = 1; i <= num; i++){
+//     factorial *= i;
+// }
+
+// console.log(factorial);
+
+
+// ======================== celsiusToFahrenheit=========
+const cel = 0;
+function celsiusToFah(cel){
+    return (cel * 9/5) + 32
+}
+
+console.log(celsiusToFah(cel));
