@@ -307,6 +307,8 @@
 // print all the even numbers
 // print all the odd numbers
 // print all the primes
+
+// Print Numbers from 1 to n
 const n = 10;
 const numbers = (n) => {
     let num = 0;
@@ -316,6 +318,17 @@ const numbers = (n) => {
     }
 };
 numbers(n);
+
+// ==========================================
+// print all the even numbers
+const evenNmbers = (n) =>{
+    for(let i = 1; i < n; i++){
+        i % 2 === 0 ? console.log(i) : false;
+    }
+}
+console.log("==============Even Numbers============");
+
+evenNmbers(n);
 
 // ============================
 // 2. Sum of Even Numbers 1 to n
