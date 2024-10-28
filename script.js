@@ -110,7 +110,7 @@
 
 
 // const car2 = { ...car}; ///using the REST operator
- 
+
 // car.name = " BMW"; // changing the value of the variable 
 
 // console.log(car);
@@ -156,10 +156,10 @@
 
 //     let reversedInput = "";
 //     for( let i = input.length-1; i >= 0; i-- ){
-    
+
 //      reversedInput += input[i];
 //      console.log(reversedInput);
-     
+
 // }
 // return input === reversedInput
 // }
@@ -172,12 +172,12 @@
 // const input = 10;
 // function factor(input){
 //     for(let i = 1; i <= input; i++){
-        
+
 //         if(input % i === 0){
 //             console.log(i);
-            
+
 //         }
-    
+
 //     }
 
 // }
@@ -195,18 +195,21 @@
 // let vowelArray = "aeiou";
 
 // let counter = 0;
-
+// let includedVowel = [];
 // for(let i = 0; i< inputString.length; i++){
 
 //     if(vowelArray.split("").includes(inputString[i].toLowerCase()))
 //         {
 //             counter += 1;
+//             includedVowel.push(inputString[i]);
 //         }
-     
-    
+
+
 // }
 
 // console.log(counter);
+// console.log(includedVowel);
+
 
 
 // =========================factorial===================
@@ -222,9 +225,56 @@
 
 
 // ======================== celsiusToFahrenheit=========
-const cel = 0;
-function celsiusToFah(cel){
-    return (cel * 9/5) + 32
+// const cel = 0;
+// // function celsiusToFah(cel){
+// //     return (cel * 9/5) + 32
+// // }
+
+// // or 
+
+// const celsiusToFah = (cel) =>{return (cel * 9/5) + 32};
+
+// console.log(celsiusToFah(cel));
+
+
+// ====================
+
+// Count Occurance of a character in a String
+// String : ‘hello world’
+// Character : ‘l’
+// Output : 3
+
+
+// const string = "hello world";
+// const character = "l";
+
+// const occurence = (st) => {
+
+//     let count = 0;
+
+//     for (let i = 0; i < st.length; i++) {
+//         if (st[i] === character) { count += 1; }
+//     }
+//     console.log(count);
+// }
+// occurence(string);
+// ===================================================
+
+// Check for Prime Number
+// Input :  7
+// Output : Prime
+
+
+const input = 11;
+
+const PrimeCheck = (input)=>{
+    for(let i = 2; i < input; i++){
+        if(input % i === 0){
+            return false;
+        }
+        return true;
+    }
+
 }
 
-console.log(celsiusToFah(cel));
+console.log(PrimeCheck(input));
